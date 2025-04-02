@@ -39,11 +39,12 @@ pipeline {
             steps{
                 script {
 
-                    for (int 1=0 ; i < 60 ; i++){
-                    echo "${i+1}"
+                    for (int 1 = 0 ; i < 60 ; i++){
+                    echo "${i + 1}"
                     sleep 1
-                }
-                sh "mvn test"
+                    }
+                    
+                    sh "mvn test"
                 }
             }
         }
