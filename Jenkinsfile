@@ -39,7 +39,7 @@ pipeline {
             steps{
                 script {
 
-                    for (int 1 = 0 ; i < 60 ; i++){
+                    for (int i = 0 ; i < 60 ; i++){
                     echo "${i + 1}"
                     sleep 1
                     }
